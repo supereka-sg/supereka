@@ -1,0 +1,49 @@
+import { motion } from "framer-motion";
+import { styles } from "../styles";
+import { ComputersCanvas } from "./canvas";
+
+const Hero = () => {
+  return (
+    <section className={`relative w-full h-screen mx-auto`}>
+      <ComputersCanvas />
+
+      <div
+        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+      >
+        <div>
+          <h1 className={`${styles.heroHeadText} text-tertiary font-serif`}>
+            Hello, we are{" "}
+            <span className="text-primary text-[96px] font-bold">SUPEREKA</span>
+          </h1>
+          <p className="text-[24px] mt-2 font-serif text-black-100">
+            Building services consultancy <br className="sm:block hidden" />
+            <i className="text-[18px] mt-2 font-serif italic text-black-100">
+              Founded 2018
+              <br className="sm:block hidden" />
+            </i>
+          </p>
+        </div>
+      </div>
+
+      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+        <a href="#about">
+          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
+            <motion.div
+              animate={{
+                y: [0, 24, 0],
+              }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                repeatType: "loop",
+              }}
+              className="w-3 h-3 rounded-full bg-secondary mb-1"
+            />
+          </div>
+        </a>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
