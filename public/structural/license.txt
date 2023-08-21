@@ -1,0 +1,11 @@
+Model Information:
+* title:	Model
+* source:	https://sketchfab.com/3d-models/model-jjRKOsyMyEn20gKbh0YVzfULbUe
+* author:	Digital Engineering (https://sketchfab.com/yuru_k)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Model" (https://sketchfab.com/3d-models/model-jjRKOsyMyEn20gKbh0YVzfULbUe) by Digital Engineering (https://sketchfab.com/yuru_k) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
