@@ -84,45 +84,4 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "projects");
-{
-  /* <section className={`relative w-full h-screen mx-auto content-between`}>
-        <div className="flex flex-col ">
-          <div>
-            <div className="w-full flex">
-              <motion.p
-                variants={fadeIn("", "", 0.1, 1)}
-                className="mt-0 text-secondary text-[24px] max-w-3xl leading-[30px] font-serif "
-              ></motion.p>
-            </div>
-            <div className="mt-5 flex flex-wrap gap-7">
-              {projects.map((project, index) => (
-                <ProjectCard
-                  key={`project-${index}`}
-                  index={index}
-                  {...project}
-                />
-              ))}
-            </div>
-            <motion.div variants={textVariant()}>
-              <h2 className={`${styles.sectionHeadText}`}>Projects. </h2>
-
-              <p className="text-secondary font-serif text-[18px]">
-                Our projects range across commercial, residential, hospitality
-                and food & beverage applications.
-              </p>
-            </motion.div>
-          </div>
-          <div>
-            <div className="flex flex-row justify-between font-serif">
-              <div className="text-tertiary">
-                See what our customers have to say
-              </div>
-              <div className="text-tertiary underline">
-                <a href="#contact">or Let's Talk</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */
-}
+export default SectionWrapper(Works, "works");
