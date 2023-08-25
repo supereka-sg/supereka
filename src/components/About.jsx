@@ -44,7 +44,7 @@ const About = () => {
           </motion.div>
           <motion.p
             variants={fadeIn("", "", 0.1, 1)}
-            className="mt-4 text-black-100 text-[28px] text-thin max-w-3xl leading-[30px] font-serif"
+            className="mt-4 text-black-100 text-[20px] text-thin max-w-3xl leading-[30px] font-serif"
           >
             Founded in 2018 by a group of like-minded architects, mechanical and
             electrical engineers to render to building owners, developers and
@@ -68,7 +68,7 @@ const About = () => {
           </div>
           <br />
           <br />
-          <a href="#projects">
+          <a href="#works">
             <h3 className="flex flex-row items-stretch align-baseline justify-end font-serif text-[24px] text-primary font-thin">
               ➡️ Browse our projects
             </h3>

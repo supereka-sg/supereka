@@ -55,6 +55,7 @@ const ComputersCanvas = () => {
 
   return (
     <Canvas
+      className="xs: w-[300px]"
       frameloop="demand"
       shadows
       dpr={[1, 2]}

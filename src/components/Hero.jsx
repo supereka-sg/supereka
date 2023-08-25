@@ -8,14 +8,16 @@ const Hero = () => {
       <ComputersCanvas />
 
       <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+        className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
         <div>
           <h1 className={`${styles.heroHeadText} text-tertiary font-serif`}>
             Hello, we are{" "}
-            <span className="text-primary text-[96px] font-bold">SUPEREKA</span>
+            <span className="text-primary font-bold">SUPEREKA</span>
           </h1>
-          <p className="text-[24px] mt-2 font-serif text-black-100">
+          <p
+            className={`${styles.heroSubText} text-[24px] mt-2 font-serif text-black-100`}
+          >
             Building services consultancy <br className="sm:block hidden" />
             <i className="text-[18px] mt-2 font-serif italic text-black-100">
               Founded 2018
