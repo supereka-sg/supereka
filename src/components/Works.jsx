@@ -18,17 +18,21 @@ const ProjectCard = ({
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
-        options={{ max: 10, scale: 1, speed: 250 }}
-        className="bg-tertiary2 p-5 rounded-2xl sm:w-[360px] w-full"
+        options={{
+          max: 45,
+          scale: 1,
+          speed: 450,
+        }}
+        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
       >
-        <div className="relative w-full h-[280px]">
+        <div className="relative w-full h-[230px]">
           <img
             src={image}
-            alt={name}
+            alt="project_image"
             className="w-full h-full object-cover rounded-2xl"
           />
 
-          {/* <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div
               onClick={() => window.open(source_code_link, "_blank")}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
@@ -39,12 +43,12 @@ const ProjectCard = ({
                 className="w-1/2 h-1/2 object-contain"
               />
             </div>
-          </div> */}
+          </div>
         </div>
 
         <div className="mt-5">
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
-          <p className="mt-2 text-secondary text-[14px] truncate">
+          <p className="mt-2 text-secondary text-[14px] text-ellipsis truncate">
             {description}
           </p>
         </div>
@@ -82,7 +86,7 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className="mt-5 flex flex-wrap gap-7">
+      <div className="mt-20 flex flex-wrap gap-7">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
@@ -99,39 +103,5 @@ const Works = () => {
     </>
   );
 };
-
-// const Works = () => {
-//   return (
-//     <>
-//       {/* <section className={`relative w-full h-screen mx-auto content-between`}> */}
-//         <motion.div variants={textVariant()}>
-//           <h2 className={`${styles.sectionHeadText}`}>Projects. </h2>
-//           <p className="text-secondary font-serif text-[18px]">
-//             Our projects range across commercial, residential, hospitality and
-//             food & beverage applications.
-//           </p>
-//         </motion.div>
-//         <div className="flex flex-wrap gap-7">
-//           {projects.map((project, index) => (
-//             <ProjectCard key={`project-${index}`} index={index} {...project} />
-//           ))}
-//         </div>
-
-{
-  /* <div>
-  <div className="flex flex-row justify-between font-serif">
-    <div className="text-tertiary">
-      <a href="#testimonial">See what our customers have to say</a>
-    </div>
-    <div className="text-tertiary underline">
-      <a href="#contact">or Let's Talk</a>
-    </div>
-  </div>
-</div>; */
-}
-//       </section>
-//     </>
-//   );
-// };
 
 export default SectionWrapper(Works, "works");
