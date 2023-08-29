@@ -246,7 +246,7 @@ const projects = [
   {
     name: "EV Charging Station",
     description:
-      "Our expert team conducts thorough site assessments and designs efficient electrical systems to ensure smooth installations. We prioritize energy efficiency, optimizing the charging station's performance. With our services, you can trust in the creation of a state-of-the-art charging station that aligns with environmental sustainability and delivers a seamless, faster charging experience for electric vehicles. Together, we pave the way towards a greener and cleaner future.",
+      "Our expert team conducts thorough site assessments and designs efficient electrical systems to ensure smooth installations. We prioritize energy efficiency, optimizing the charging station's performance.",
     tags: [
       {
         name: "nextjs",
