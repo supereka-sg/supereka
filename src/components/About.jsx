@@ -45,15 +45,47 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        Founded in 2018 by a group of like-minded architects, mechanical and
-        electrical engineers to render to building owners, developers and
-        builders, service with solutions. Bringing together years of experience
-        in the field of engineering & project management,{" "}
-        <b className="font-sans text-[20px]">SUPEREKA</b> strives to work in
-        close collaboration with clients, fellow consultants and builders to
-        deliver quality projects in the building and construction field. Our
-        current pool of clients range from private developers and public
-        organizations to builders and individual property owners.
+        Established in 2018, <b className="font-sans text-[20px]">SUPEREKA </b>
+        is the brainchild of a collective of visionary architects, mechanical
+        and electrical engineers. Our mission? To provide building owners,
+        developers, and builders with not just services, but innovative
+        solutions that redefine excellence in the industry. <br></br>
+        <br></br>
+        At <b className="font-sans text-[20px]">SUPEREKA</b>, we've woven
+        together a tapestry of expertise, fusing years of experience in
+        engineering and project management. Our commitment is to forge strong
+        partnerships with clients, fellow consultants, and builders, fostering a
+        collaborative spirit that brings quality projects to life in the dynamic
+        realm of building and construction. <br></br>
+        <br></br>
+        <b>
+          Why choose <b className="font-sans text-[20px]">SUPEREKA</b>?
+        </b>
+        <br></br>
+        <br></br>
+        <b>Expertise Unleashed:</b> Our team comprises seasoned architects and
+        mechanical and electrical engineers who bring a wealth of knowledge to
+        every project. We don't just meet standards; we exceed them.
+        Collaboration at the Core: We believe in the power of collaboration. By
+        working closely with clients, consultants, and builders, we ensure
+        seamless integration and deliver projects that stand the test of time.
+        <br></br>
+        <br></br>
+        <b>Diverse Clientele, Singular Commitment:</b> From private developers
+        and public organizations to builders and individual property owners, our
+        client portfolio is as diverse as the projects we undertake. Regardless
+        of scale or scope, our commitment to excellence remains unwavering.
+        <br></br>
+        <br></br>
+        <b>Innovation Redefined:</b> SUPEREKA isn't just about meeting
+        expectations; it's about exceeding them. We embrace innovation, adopting
+        cutting-edge solutions to transform challenges into opportunities.
+        Discover the SUPEREKA Advantage – Where Vision Meets Precision! Embark
+        on a journey of building excellence with SUPEREKA. Our passion for
+        innovation, commitment to quality, and dedication to collaborative
+        success make us the go-to building services consultancy for your next
+        project. Ready to redefine excellence? Let's build together with
+        SUPEREKA.
       </motion.p>
       <br />
       <br />
@@ -68,44 +100,6 @@ const About = () => {
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
-      {/* <section className={`relative w-full h-screen mx-auto content-between`}>
-        <div className="flex flex-col items-stretch">
-          <motion.div variants={textVariant()}>
-            <h2 className={styles.sectionHeadText}>About Us.</h2>
-          </motion.div>
-          <motion.p
-            variants={fadeIn("", "", 0.1, 1)}
-            className="mt-4 text-black-100 text-[20px] text-thin max-w-3xl leading-[30px] font-serif"
-          >
-            Founded in 2018 by a group of like-minded architects, mechanical and
-            electrical engineers to render to building owners, developers and
-            builders, service with solutions. Bringing together years of
-            experience in the field of engineering & project management,{" "}
-            <b className="font-sans text-[20px]">SUPEREKA</b> strives to work in
-            close collaboration with clients, fellow consultants and builders to
-            deliver quality projects in the building and construction field. Our
-            current pool of clients range from private developers and public
-            organizations to builders and individual property owners.
-          </motion.p>
-          <div className="mt-10 flex flex-wrap gap-10 border-collapse w-full">
-            {services.map((service, index) => (
-              <ServiceCard
-                key={service.title}
-                index={index}
-                {...service}
-                className="font-serif"
-              />
-            ))}
-          </div>
-          <br />
-          <br />
-          <a href="#works">
-            <h3 className="flex flex-row items-stretch align-baseline justify-end font-serif text-[24px] text-primary font-thin">
-              ➡️ Browse our projects
-            </h3>
-          </a>
-        </div>
-      </section> */}
     </>
   );
 };

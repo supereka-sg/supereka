@@ -9,7 +9,9 @@ import close from "./close.svg";
 import pm from "./pm.png";
 import me from "./me.png";
 import ee from "./ee.png";
+import fp from "./fp.png";
 import diligence from "./diligence.png";
+import qp from "./qp.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -67,4 +69,6 @@ export {
   me,
   ee,
   diligence,
+  fp,
+  qp,
 };

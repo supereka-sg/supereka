@@ -27,6 +27,8 @@ import {
   me,
   ee,
   diligence,
+  fp,
+  qp,
 } from "../assets";
 
 export const navLinks = [
@@ -46,12 +48,20 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Mechanical Qualified Professional",
+    title: "Air-Conditioning & Mechanical Ventilation Services (ACMV)",
     icon: me,
   },
   {
-    title: "Electrical Qualified Professional",
+    title: "Electrical Services",
     icon: ee,
+  },
+  {
+    title: "Fire Protection Services",
+    icon: fp,
+  },
+  {
+    title: "Qualified Professional Endorsement",
+    icon: qp,
   },
   {
     title: "Project Management",
