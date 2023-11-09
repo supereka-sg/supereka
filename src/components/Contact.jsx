@@ -38,7 +38,7 @@ const Contact = () => {
           from_name: form.name,
           to_name: "Supereka",
           from_email: form.email,
-          to_email: "admin@supereka-sg.com", // Change the email that the email goes to here!
+          to_email: "admin@su", // Change the email that the email goes to here!
           message: form.message,
         },
         "NBiRyZckHfolab85A"
@@ -127,6 +127,20 @@ const Contact = () => {
             </button>
           </form>
         </motion.div>
+
+        <motion.div
+          variants={slideIn("right", "tween", 0.2, 1)}
+          className="xl:flex-1 xl:h-auto md:h-[550px] h-350px"
+        >
+          {/* <EarthCanvas /> */}
+          {/* removed the 3D model of the structural, need to look for gltf of mechanical stuff */}
+        </motion.div>
+      </div>
+      <div className="xl: xl:flex-row flex-column-reverse flex gap-5 overflow-hidden">
+        <motion.div
+          variants={slideIn("left", "tween", 0.2, 1)}
+          className="flex-[0.75] bg-grey p-8 rounded-2xl"
+        ></motion.div>
 
         <motion.div
           variants={slideIn("right", "tween", 0.2, 1)}
