@@ -89,17 +89,17 @@ const About = () => {
       </motion.p>
       <br />
       <br />
-      <a href="#works">
+      <a href="#services">
         <h3 className="flex flex-row items-stretch align-baseline justify-end font-serif text-[24px] text-primary font-thin">
-          ➡️ Browse our projects
+          ➡️ Browse our services
         </h3>
       </a>
 
-      <div className="mt-20 flex flex-wrap gap-10">
+      {/* <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
-      </div>
+      </div> */}
     </>
   );
 };

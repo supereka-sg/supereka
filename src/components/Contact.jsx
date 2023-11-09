@@ -132,6 +132,24 @@ const Contact = () => {
           variants={slideIn("right", "tween", 0.2, 1)}
           className="xl:flex-1 xl:h-auto md:h-[550px] h-350px"
         >
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+
+          <div className="contact-details">
+            <div className={styles.sectionSubText}>
+              <h3>SUPEREKA LLP</h3>
+              <br></br>
+              <p clas>
+                🏢: NATIONAL DESIGN CENTRE, <br></br>111 MIDDLE ROAD, <br></br>
+                #03-01, Postal 188969
+              </p>
+              <p>✉️: admin@supereka-sg.com</p>
+            </div>
+          </div>
           {/* <EarthCanvas /> */}
           {/* removed the 3D model of the structural, need to look for gltf of mechanical stuff */}
         </motion.div>
