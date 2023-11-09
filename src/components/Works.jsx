@@ -67,8 +67,11 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-0 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Our projects range across commercial, residential, hospitality and
-          food & beverage applications.
+          Building services consultants play a crucial role in a wide range of
+          built environment projects where the design, installation, and
+          operation of building services systems are critical. These systems are
+          essential for the comfort, safety, and functionality of buildings.
+          <br></br>Here are some types of projects that we have worked on:
         </motion.p>
       </div>
 
