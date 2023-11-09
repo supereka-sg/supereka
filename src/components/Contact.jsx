@@ -36,9 +36,9 @@ const Contact = () => {
         "template_u9usrvk",
         {
           from_name: form.name,
-          to_name: "Syaz",
+          to_name: "Supereka",
           from_email: form.email,
-          to_email: "nawzaysfinah@gmail.com",
+          to_email: "admin@supereka-sg.com", // Change the email that the email goes to here!
           message: form.message,
         },
         "NBiRyZckHfolab85A"
@@ -87,7 +87,7 @@ const Contact = () => {
                 value={form.name}
                 onChange={handleChange}
                 placeholder="Your name?"
-                className="bg-tertiary2 py-4 px-6 placeholder:text-secondary text-tertiary2 rounded-lg outline-none border-none font-medium"
+                className="bg-tertiary2 py-4 px-6 placeholder:text-secondary text-secondary rounded-lg outline-none border-none font-medium"
               />
             </label>
 
@@ -100,7 +100,7 @@ const Contact = () => {
                 value={form.email}
                 onChange={handleChange}
                 placeholder="Your email?"
-                className="bg-tertiary2 py-4 px-6 placeholder:text-secondary text-tertiary2 rounded-lg outline-none border-none font-medium"
+                className="bg-tertiary2 py-4 px-6 placeholder:text-secondary text-secondary rounded-lg outline-none border-none font-medium"
               />
             </label>
 
@@ -115,7 +115,7 @@ const Contact = () => {
                 value={form.message}
                 onChange={handleChange}
                 placeholder="What can we help you with?"
-                className="bg-tertiary2 py-4 px-6 placeholder:text-secondary text-tertiary2 rounded-lg outline-none border-none font-medium"
+                className="bg-tertiary2 py-4 px-6 placeholder:text-secondary text-secondary rounded-lg outline-none border-none font-medium"
               />
             </label>
 
@@ -141,13 +141,6 @@ const Contact = () => {
 
           <div className="contact-details">
             <div className={styles.sectionSubText}>
-              {/* <h3>SUPEREKA LLP</h3>
-              <br></br>
-              <p className="">
-                🏢: NATIONAL DESIGN CENTRE, <br></br>111 MIDDLE ROAD, <br></br>
-                #03-01, Postal 188969
-              </p>
-              <p>✉️: admin@supereka-sg.com</p> */}
               <div class="flex justify-between items-center mb-4">
                 <div class="mr-2">🏢</div>
                 <div class="text-right">
