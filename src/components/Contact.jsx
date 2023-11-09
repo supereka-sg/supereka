@@ -147,11 +147,6 @@ const Contact = () => {
           className="xl:flex-1 xl:h-auto md:h-[550px] h-350px"
         >
           <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
 
           <div className="contact-details">
             <div className={styles.sectionSubText}>
