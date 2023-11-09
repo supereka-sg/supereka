@@ -141,15 +141,33 @@ const Contact = () => {
 
           <div className="contact-details">
             <div className={styles.sectionSubText}>
-              <h3>SUPEREKA LLP</h3>
+              {/* <h3>SUPEREKA LLP</h3>
               <br></br>
-              <p clas>
+              <p className="">
                 🏢: NATIONAL DESIGN CENTRE, <br></br>111 MIDDLE ROAD, <br></br>
                 #03-01, Postal 188969
               </p>
-              <p>✉️: admin@supereka-sg.com</p>
+              <p>✉️: admin@supereka-sg.com</p> */}
+              <div class="flex justify-between items-center mb-4">
+                <div class="mr-2">🏢</div>
+                <div class="text-right">
+                  NATIONAL DESIGN CENTRE, <br></br>111 MIDDLE ROAD, <br></br>
+                  #03-01, Postal 188969
+                </div>
+              </div>
+
+              <div class="flex justify-between items-center mb-4">
+                <div class="mr-2">✉️</div>
+                <div class="text-right">admin@supereka-sg.com</div>
+              </div>
+
+              <div class="flex justify-between items-center mb-4">
+                <div class="mr-2">📱</div>
+                <div class="text-right">+65 9667 4754</div>
+              </div>
             </div>
           </div>
+
           {/* <EarthCanvas /> */}
           {/* removed the 3D model of the structural, need to look for gltf of mechanical stuff */}
         </motion.div>

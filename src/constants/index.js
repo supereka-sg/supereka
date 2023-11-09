@@ -29,6 +29,9 @@ import {
   diligence,
   fp,
   qp,
+  HPV,
+  Palais,
+  Tipo,
 } from "../assets";
 
 export const navLinks = [
@@ -216,12 +219,12 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Cloud Kitchens",
+    name: "Central Kitchens",
     description:
-      "Design specifications for multiple cloud kitchens across the APAC region, supporting the growth of the regional food delivery supply chain",
+      "Design specifications for multiple central kitchens across the APAC region, supporting the growth of the regional food delivery supply chain",
     tags: [
       {
-        name: "HVAC",
+        name: "ACMV",
         color: "blue-text-gradient",
       },
       {
@@ -237,20 +240,20 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "MEP Consultancy",
+    name: "Residential",
     description:
-      "Working with building owners & architects from pre-design to maintenance, engineering consultants strive to minimize the building’s operating costs, downtime, and energy consumption.",
+      "Providing energy-efficient ACMV solutions, supporting infrastructure for a smart home, our expertise ensures a safe, comfortable and technonoglically advanecd living environment",
     tags: [
       {
-        name: "react",
+        name: "ACMV",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "electrical",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "plumbing",
         color: "pink-text-gradient",
       },
     ],
@@ -258,21 +261,80 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "EV Charging Station",
+    name: "Commercial",
     description:
-      "Our expert team conducts thorough site assessments and designs efficient electrical systems to ensure smooth installations. We prioritize energy efficiency, optimizing the charging station's performance.",
+      "Working closely with architects & builders to produce a vibrant & inviting retail experienec in shopping malls and retail spaces using lighting, ACMV, and electrical systems.",
     tags: [
       {
-        name: "nextjs",
+        name: "ACMV",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "electrical",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "plumbing",
         color: "pink-text-gradient",
+      },
+    ],
+    image: Palais,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Hospitality",
+    description:
+      "Balancing the behind-the-scenes operations & the front-facing elegance required in hospitality, our expertise is in ensuring a classy, efficient & reliable space where high quality service can be delivered without the expense of luxury",
+    tags: [
+      {
+        name: "ACMV",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "electrical",
+        color: "green-text-gradient",
+      },
+      {
+        name: "plumbing",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: Tipo,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Historic Buildings",
+    description:
+      "Historic & cultural buildings must be navigated carefully whilst updating their facilities for the 21st century. Our expertise lie in innovative solutions to preserve and upgrade these buildings in the least invasive ways possible",
+    tags: [
+      {
+        name: "ACMV",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "electrical",
+        color: "green-text-gradient",
+      },
+      {
+        name: "plumbing",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: HPV,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "EV Charging Station",
+    description:
+      "Our expert team conducts thorough site assessments and designs efficient electrical systems to ensure smooth installations. We prioritize energy efficiency, optimizing the charging station's performance",
+    tags: [
+      {
+        name: "LEW",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "electricalloadupgrading",
+        color: "green-text-gradient",
       },
     ],
     image: tripguide,
