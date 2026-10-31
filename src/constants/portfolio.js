@@ -76,6 +76,32 @@ export const sectors = [
       { name: "Head office fit-out for the brand", office: true },
     ],
   },
+  {
+    id: "offices",
+    name: "Offices: local and overseas",
+    summary:
+      "Office design and management for companies in Singapore and overseas, delivered in a matter of weeks.",
+    projects: [
+      { name: "Office design and management in South Korea" },
+      { name: "Office design and management in the Philippines" },
+      { name: "Office design" },
+    ],
+  },
+  {
+    id: "regulatory-submissions",
+    name: "Vetting and regulatory submissions",
+    summary:
+      "Vetting and submission of building services designs to landlords and authorities, including a PUB submission with QP endorsement of calculations.",
+    projects: [
+      { name: "Vetting and landlord submission for a new office fit-out" },
+      {
+        name: "Building plan, ACMV and fire protection submission for an office",
+      },
+      {
+        name: "PUB submission with QP endorsement of calculations for a temporary toilet facility",
+      },
+    ],
+  },
 ];
 
 export const hdbProjects = [

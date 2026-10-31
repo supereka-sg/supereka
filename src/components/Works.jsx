@@ -82,7 +82,7 @@ const Works = () => {
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
         Building services systems are essential for the comfort, safety and
-        functionality of buildings. SUPEREKA has delivered more than 50
+        functionality of buildings. SUPEREKA has delivered more than 60
         projects in Singapore, from tea-brand outlets and central kitchens to
         HDB neighbourhood upgrading, places of worship and landed homes.
       </motion.p>
