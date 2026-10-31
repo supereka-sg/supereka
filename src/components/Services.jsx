@@ -1,4 +1,5 @@
 import { Tilt } from "react-tilt";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
@@ -6,7 +7,7 @@ import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const ServiceCard = ({ index, title, icon }) => (
+const ServiceCard = ({ index, title, icon, slug }) => (
   <Tilt className="xs:w-[250px] w-full">
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
@@ -20,14 +21,10 @@ const ServiceCard = ({ index, title, icon }) => (
         }}
         className="bg-tertiary2 rounded-[20px] py-5 px-12 min-h-[200px] flex justify-evenly items-center flex-col"
       >
-        <img
-          src={icon}
-          alt="web-development"
-          className="w-12 h-12 object-contain"
-        />
+        <img src={icon} alt="" className="w-12 h-12 object-contain" />
 
         <h3 className="text-secondary text-[20px] text-center font-serif text-align-left">
-          {title}
+          <Link to={`/services/${slug}/`}>{title}</Link>
         </h3>
       </div>
     </motion.div>
@@ -44,16 +41,20 @@ const Services = () => {
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
-      ></motion.p>
+      >
+        SUPEREKA provides mechanical, electrical and fire protection design,
+        regulatory endorsement, project management and due diligence for
+        buildings in Singapore. Select a service to see what it covers.
+      </motion.p>
       <br />
       <br />
 
-      <div className="mt-20 flex flex-wrap gap-10">
+      <div className="mt-10 flex flex-wrap gap-10">
         {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
+          <ServiceCard key={service.slug} index={index} {...service} />
         ))}
       </div>
-      <a href="#works">
+      <a href="/projects/">
         <h3 className="flex flex-row items-stretch align-baseline justify-end font-serif text-[24px] text-primary font-thin">
           ➡️ Browse our projects
         </h3>

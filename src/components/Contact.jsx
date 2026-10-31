@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
 import { styles } from "../styles";
-import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
@@ -150,22 +149,22 @@ const Contact = () => {
 
           <div className="contact-details">
             <div className={styles.sectionSubText}>
-              <div class="flex justify-between items-center mb-4">
-                <div class="mr-2">🏢</div>
-                <div class="text-right">
+              <div className="flex justify-between items-center mb-4">
+                <div className="mr-2">🏢</div>
+                <div className="text-right">
                   NATIONAL DESIGN CENTRE, <br></br>111 MIDDLE ROAD, <br></br>
                   #03-01, Postal 188969
                 </div>
               </div>
 
-              <div class="flex justify-between items-center mb-4">
-                <div class="mr-2">✉️</div>
-                <div class="text-right">admin@supereka-sg.com</div>
+              <div className="flex justify-between items-center mb-4">
+                <div className="mr-2">✉️</div>
+                <div className="text-right">admin@supereka-sg.com</div>
               </div>
 
-              <div class="flex justify-between items-center mb-4">
-                <div class="mr-2">📱</div>
-                <div class="text-right">+65 9667 4754</div>
+              <div className="flex justify-between items-center mb-4">
+                <div className="mr-2">📱</div>
+                <div className="text-right">+65 9667 4754</div>
               </div>
             </div>
           </div>

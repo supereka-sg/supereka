@@ -1,14 +1,24 @@
+import { lazy, Suspense } from "react";
 import { motion } from "framer-motion";
+
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
+import { stats } from "../constants/portfolio";
+import { SITE } from "../constants/site";
+import ClientOnly from "./ClientOnly";
+
+const ComputersCanvas = lazy(() => import("./canvas/Computers"));
 
 const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
-      <ComputersCanvas />
+      <ClientOnly>
+        <Suspense fallback={null}>
+          <ComputersCanvas />
+        </Suspense>
+      </ClientOnly>
 
       <div
-        className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+        className={`absolute inset-0 top-[120px] z-10 pointer-events-none max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
         <div>
           <h1 className={`${styles.heroHeadText} text-tertiary font-serif`}>
@@ -20,10 +30,34 @@ const Hero = () => {
           >
             Building services consultancy <br className="sm:block hidden" />
             <i className="text-[18px] mt-2 font-serif italic text-black-100">
-              Founded 2018
+              Founded {SITE.foundingYear}
               <br className="sm:block hidden" />
             </i>
           </p>
+          <p className="mt-4 max-w-xl font-serif text-[18px] text-secondary">
+            ACMV, electrical, fire protection and Qualified Professional
+            endorsement for buildings in Singapore.
+          </p>
+          <ul className="mt-6 flex flex-wrap gap-x-8 gap-y-2 font-serif text-secondary list-none">
+            <li>
+              <b className="font-sans text-primary text-[22px]">
+                {stats.totalProjects}+
+              </b>{" "}
+              projects
+            </li>
+            <li>
+              <b className="font-sans text-primary text-[22px]">
+                {stats.fnbOutlets}
+              </b>{" "}
+              F&amp;B outlets
+            </li>
+            <li>
+              <b className="font-sans text-primary text-[22px]">
+                {stats.centralKitchens}
+              </b>{" "}
+              central kitchens
+            </li>
+          </ul>
         </div>
       </div>
 

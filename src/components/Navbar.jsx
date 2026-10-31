@@ -21,7 +21,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
+          <img src={logo} alt="SUPEREKA logo" className="w-9 h-9 object-contain" />
           {/* <p className="text-black-100 text-[24px] cursor-pointer flex">
             Supereka&nbsp;
             <span className="sm:block hidden text-[12px]">Engineers</span>
@@ -36,7 +36,7 @@ const Navbar = () => {
               } hover:text-tertiary text-[16px] font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
-              <a href={`#${link.id}`}>{link.title}</a>
+              <a href={link.href}>{link.title}</a>
             </li>
           ))}
         </ul>
@@ -65,7 +65,7 @@ const Navbar = () => {
                     setActive(link.title);
                   }}
                 >
-                  <a href={`#${link.id}`}>{link.title}</a>
+                  <a href={link.href}>{link.title}</a>
                 </li>
               ))}
             </ul>
