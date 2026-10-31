@@ -45,7 +45,7 @@ export const caseStudies = [
     summary:
       "Design specifications for 11 multi-stall central kitchens across Singapore, supporting the regional food delivery supply chain.",
     overview:
-      "SUPEREKA has prepared building services design for 11 multi-stall central kitchens in industrial and commercial buildings across Singapore, from the east to the west of the island. These facilities support the growth of the food delivery supply chain.",
+      "SUPEREKA has prepared building services design for 11 multi-stall central kitchens in industrial and commercial buildings across Singapore, from the east to the west of the island. These facilities support the growth of the food delivery supply chain. Recent kitchens were delivered as full consultancy in about three months each.",
     highlights: [
       ["11", "central kitchen sites"],
       ["3", "disciplines: ACMV, electrical, plumbing"],
@@ -103,7 +103,7 @@ export const caseStudies = [
     summary:
       "Additions and alterations to two mosques and a temple in Singapore, upgrading facilities in the least invasive way possible.",
     overview:
-      "SUPEREKA has worked on additions and alterations to two mosques and a temple in Singapore, updating building services for use today.",
+      "SUPEREKA has worked on additions and alterations to two mosques and a temple in Singapore, updating building services for use today. The temple project is a programme of about 18 months.",
     highlights: [
       ["3", "places of worship"],
       ["2", "mosques and 1 temple"],
@@ -133,7 +133,7 @@ export const caseStudies = [
     summary:
       "Energy-efficient ACMV and electrical design for five new landed homes in Singapore, including pools and smart-home infrastructure.",
     overview:
-      "SUPEREKA has provided building services for five new envelope-control landed homes: semi-detached houses with attics and swimming pools, a semi-detached house, and an intermediate terrace house.",
+      "SUPEREKA has provided building services for five new envelope-control landed homes: semi-detached houses with attics and swimming pools, a semi-detached house, and an intermediate terrace house. Full consultancy on a landed home can run for around 18 months.",
     highlights: [
       ["5", "new landed homes"],
       ["3", "with swimming pools"],
@@ -177,6 +177,59 @@ export const caseStudies = [
       },
     ],
     sectorId: "commercial",
+  },
+  {
+    slug: "offices",
+    title: "Office design and management, in Singapore and overseas",
+    kicker: "Offices",
+    summary:
+      "Office design and management for companies in Singapore and overseas, including projects in South Korea and the Philippines.",
+    overview:
+      "SUPEREKA has delivered office design and management projects beyond Singapore, in South Korea and the Philippines, as well as an office design in Singapore. The overseas projects were each delivered in about three months.",
+    highlights: [
+      ["3", "office projects"],
+      ["2", "overseas: South Korea and the Philippines"],
+    ],
+    involves:
+      "Office projects are shaped by short programmes and by the landlord's building. Design and management covers the building services that make a workplace comfortable and compliant, coordinated so the fit-out can be delivered on time.",
+    scope: [
+      ["acmv", "Air-conditioning and ventilation"],
+      ["electrical", "Electrical and lighting design"],
+      ["project-management", "Design and management through delivery"],
+    ],
+    regulation: [],
+    sectorId: "offices",
+  },
+  {
+    slug: "regulatory-submissions",
+    title: "Vetting and regulatory submissions",
+    kicker: "Submissions",
+    summary:
+      "Vetting and submission of building services designs to landlords and authorities, including a PUB submission with QP endorsement of calculations.",
+    overview:
+      "Alongside full consultancy, SUPEREKA vets and submits building services designs to landlords and authorities. Recent examples include a landlord submission for a new office fit-out, a building plan, ACMV and fire protection submission for an office completed in about two weeks, and a PUB submission with QP endorsement of calculations for a temporary toilet facility.",
+    highlights: [
+      ["3", "submission projects"],
+      ["2 weeks", "for one office submission"],
+    ],
+    involves:
+      "Not every project needs a full design appointment. Where a design already exists, a submission-only scope reviews the drawings, completes the submission to the right authority or landlord, and provides the endorsement required.",
+    scope: [
+      ["qualified-person-endorsement", "Vetting and endorsement of submissions"],
+      ["acmv", "ACMV submissions"],
+      ["fire-protection", "Fire protection submissions"],
+    ],
+    regulation: [
+      {
+        text: "Building plans are submitted to BCA through a Qualified Person (QP).",
+        source: "bcaPlans",
+      },
+      {
+        text: "Fire safety plans are submitted to SCDF by a QP through the CORENET e-Submission System.",
+        source: "scdfPlans",
+      },
+    ],
+    sectorId: "regulatory-submissions",
   },
 ];
 

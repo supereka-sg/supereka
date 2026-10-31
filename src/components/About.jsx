@@ -29,7 +29,8 @@ const About = () => {
         Our work spans {stats.totalProjects}+ projects: {stats.fnbOutlets}{" "}
         outlets for a leading premium tea brand, {stats.centralKitchens} central kitchens, HDB
         neighbourhood upgrading, places of worship, commercial buildings and
-        landed homes. <br></br>
+        landed homes, plus office design and management projects overseas, in
+        South Korea and the Philippines. <br></br>
         <br></br>
         <b>Why choose SUPEREKA?</b>
         <br></br>

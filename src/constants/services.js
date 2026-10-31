@@ -203,6 +203,8 @@ export const services = [
       "Endorsement of building services plans and submissions for BCA, SCDF and other regulatory approvals in Singapore.",
     scope: [
       "Endorsement of building services plans and submissions",
+      "Vetting and submission of designs to landlords and authorities, including submission-only scopes",
+      "PUB submissions with QP endorsement of calculations",
       "Coordination with architects, builders and the authorities",
       "Review of design and site works against approved plans",
     ],
@@ -236,6 +238,14 @@ export const services = [
       {
         q: "How are plans submitted?",
         a: "Through CORENET. New projects of 30,000 m² gross floor area or more use CORENET X, and other submissions use CORENET 2.0.",
+      },
+      {
+        q: "Do you take submission-only appointments?",
+        a: "Yes. We vet and submit building services designs to landlords and authorities without a full design appointment. Recent work includes a landlord submission for a new office fit-out and a building plan, ACMV and fire protection submission for an office, completed in about two weeks.",
+      },
+      {
+        q: "Can you prepare PUB submissions?",
+        a: "Yes. We have prepared a PUB submission with QP endorsement of calculations for a temporary toilet facility.",
       },
       {
         q: "Can SUPEREKA endorse submissions designed by another consultant?",

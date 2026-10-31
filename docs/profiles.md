@@ -27,7 +27,7 @@ Keep these details identical everywhere (site footer, Google, LinkedIn, director
 
 **Business description** (limit 750 characters):
 
-> SUPEREKA is a building services consultancy in Singapore, founded in 2018 by architects and mechanical and electrical engineers. We design and supervise air-conditioning and mechanical ventilation (ACMV), electrical and fire protection systems, provide Qualified Person (QP) endorsement, project management and due diligence. Our 55+ projects include 19 outlets for a leading premium tea brand, 11 central kitchens, HDB neighbourhood upgrading, places of worship, offices and landed homes. Contact us to discuss your project.
+> SUPEREKA is a building services consultancy in Singapore, founded in 2018 by architects and mechanical and electrical engineers. We design and supervise air-conditioning and mechanical ventilation (ACMV), electrical and fire protection systems, provide Qualified Person (QP) endorsement, project management and due diligence. Our 60+ projects include 19 outlets for a leading premium tea brand, 11 central kitchens, HDB neighbourhood upgrading, places of worship, offices and landed homes. Contact us to discuss your project.
 
 **Services to list** (each with a one-line description, taken from the site):
 
@@ -99,7 +99,7 @@ photos you own the rights to, team photo. Avoid renders or stock images.
 
 **First three posts** (adapt freely):
 
-1. *Announcement.* "Our new website lists 55+ projects delivered in Singapore since 2018, from premium tea-brand outlets to HDB neighbourhood upgrading. Take a look: https://supereka-sg.com/projects/"
+1. *Announcement.* "Our new website lists 60+ projects delivered in Singapore since 2018, from premium tea-brand outlets to HDB neighbourhood upgrading. Take a look: https://supereka-sg.com/projects/"
 2. *Explainer.* Share the ACMV FAQ: "What does ACMV stand for, and what does it cover?" with a link to https://supereka-sg.com/services/acmv/
 3. *Project.* A single project from the case studies (see https://supereka-sg.com/projects/), with one photo you own.
 
