@@ -10,11 +10,14 @@ export const SITE = {
     postalCode: "188969",
     country: "SG",
   },
-  // Add the public profile URLs here once they exist (LinkedIn company page,
-  // Google Business Profile, directory listings). They are published in the
+  // Public profiles for the company (LinkedIn company page, Google Business
+  // Profile). Add any directory listings here too. They are published in the
   // structured data as `sameAs`, which helps search and AI tools recognise
   // these profiles as the same company.
-  sameAs: [],
+  sameAs: [
+    "https://www.linkedin.com/company/96142158/",
+    "https://share.google/GyaHio9dbtY3dqEdo",
+  ],
   tagline: "Building services consultancy in Singapore",
   description:
     "SUPEREKA is a Singapore building services consultancy, founded in 2018, providing air-conditioning and mechanical ventilation (ACMV), electrical, fire protection, Qualified Person (QP) endorsement, project management and due diligence services, in Singapore and overseas.",
