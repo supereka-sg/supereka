@@ -1,6 +1,6 @@
 # SUPEREKA
 
-> SUPEREKA is a Singapore building services consultancy, founded in 2018, providing air-conditioning and mechanical ventilation (ACMV), electrical, fire protection, Qualified Person (QP) endorsement, project management and due diligence services.
+> SUPEREKA is a Singapore building services consultancy, founded in 2018, providing air-conditioning and mechanical ventilation (ACMV), electrical, fire protection, Qualified Person (QP) endorsement, project management and due diligence services, in Singapore and overseas.
 
 SUPEREKA is a building services (M&E) consultancy based in Singapore, founded in 2018 by architects and mechanical and electrical engineers. It serves building owners, developers, builders and homeowners.
 
@@ -16,13 +16,15 @@ Address: National Design Centre, 111 Middle Road, #03-01, Singapore 188969
 - [Due Diligence](https://supereka-sg.com/services/due-diligence/): Building services due diligence for owners, buyers and tenants who need an independent view of a building's mechanical and electrical systems.
 
 ## Projects
-- [All projects](https://supereka-sg.com/projects/): 55+ projects across 5 sectors and HDB neighbourhood upgrading, including 19 outlets for a leading premium tea brand and 11 central kitchens.
+- [All projects](https://supereka-sg.com/projects/): 61+ projects across 7 sectors and HDB neighbourhood upgrading, including 19 outlets for a leading premium tea brand and 11 central kitchens.
 - [Outlet rollout for a leading premium tea brand](https://supereka-sg.com/projects/fnb-outlets/): Building services consultancy for 19 outlets of a leading premium tea brand across Singapore, plus the brand's head office.
 - [Central kitchens for the food delivery supply chain](https://supereka-sg.com/projects/central-kitchens/): Design specifications for 11 multi-stall central kitchens across Singapore, supporting the regional food delivery supply chain.
 - [Public housing neighbourhood upgrading](https://supereka-sg.com/projects/hdb-neighbourhood-upgrading/): M&E design and construction supervision for HDB Neighbourhood Renewal Programme works and covered linkway upgrading across Singapore.
 - [Mosques and temples: upgrading historic buildings](https://supereka-sg.com/projects/places-of-worship/): Additions and alterations to two mosques and a temple in Singapore, upgrading facilities in the least invasive way possible.
 - [Landed homes with efficient building services](https://supereka-sg.com/projects/residential/): Energy-efficient ACMV and electrical design for five new landed homes in Singapore, including pools and smart-home infrastructure.
 - [Offices, restaurants and hospitality venues](https://supereka-sg.com/projects/commercial/): Building services for seven commercial and hospitality projects, from a waterfront restaurant to offices and a fitness gym.
+- [Office design and management, in Singapore and overseas](https://supereka-sg.com/projects/offices/): Office design and management for companies in Singapore and overseas, including projects in South Korea and the Philippines.
+- [Vetting and regulatory submissions](https://supereka-sg.com/projects/regulatory-submissions/): Vetting and submission of building services designs to landlords and authorities, including a PUB submission with QP endorsement of calculations.
 
 ## Key facts
 - Founded: 2018
