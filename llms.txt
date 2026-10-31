@@ -1,6 +1,6 @@
 # SUPEREKA
 
-> SUPEREKA is a Singapore building services consultancy, founded in 2018, providing air-conditioning and mechanical ventilation (ACMV), electrical, fire protection, Qualified Professional endorsement, project management and due diligence services.
+> SUPEREKA is a Singapore building services consultancy, founded in 2018, providing air-conditioning and mechanical ventilation (ACMV), electrical, fire protection, Qualified Person (QP) endorsement, project management and due diligence services.
 
 SUPEREKA is a building services (M&E) consultancy based in Singapore, founded in 2018 by architects and mechanical and electrical engineers. It serves building owners, developers, builders and homeowners.
 
@@ -11,18 +11,18 @@ Address: National Design Centre, 111 Middle Road, #03-01, Singapore 188969
 - [Air-Conditioning & Mechanical Ventilation Services (ACMV)](https://supereka-sg.com/services/acmv/): Design and supervision of air-conditioning and mechanical ventilation systems for offices, retail, F&B, central kitchens, homes and places of worship in Singapore.
 - [Electrical Services](https://supereka-sg.com/services/electrical/): Electrical design, load assessment and Licensed Electrical Worker (LEW) services, including electrical load upgrading and EV charging infrastructure in Singapore.
 - [Fire Protection Services](https://supereka-sg.com/services/fire-protection/): Fire protection system design and regulatory submissions for new and existing buildings in Singapore.
-- [Qualified Professional Endorsement](https://supereka-sg.com/services/qualified-professional-endorsement/): Qualified Professional endorsement of building services submissions for regulatory approval in Singapore.
+- [Qualified Person (QP) Endorsement](https://supereka-sg.com/services/qualified-person-endorsement/): Endorsement of building services plans and submissions for BCA, SCDF and other regulatory approvals in Singapore.
 - [Project Management](https://supereka-sg.com/services/project-management/): Project management and construction supervision for building services works, from design through to completion.
 - [Due Diligence](https://supereka-sg.com/services/due-diligence/): Building services due diligence for owners, buyers and tenants who need an independent view of a building's mechanical and electrical systems.
 
 ## Projects
-- [All projects](https://supereka-sg.com/projects/): 55+ projects across 5 sectors and HDB neighbourhood upgrading, including 19 CHAGEE outlets and 11 central kitchens.
-- [CHAGEE outlets across Singapore](https://supereka-sg.com/projects/fnb-outlets/): Building services consultancy for 19 CHAGEE tea outlets across Singapore, plus the CHAGEE main office.
+- [All projects](https://supereka-sg.com/projects/): 55+ projects across 5 sectors and HDB neighbourhood upgrading, including 19 outlets for a leading premium tea brand and 11 central kitchens.
+- [Outlet rollout for a leading premium tea brand](https://supereka-sg.com/projects/fnb-outlets/): Building services consultancy for 19 outlets of a leading premium tea brand across Singapore, plus the brand's head office.
 - [Central kitchens for the food delivery supply chain](https://supereka-sg.com/projects/central-kitchens/): Design specifications for 11 multi-stall central kitchens across Singapore, supporting the regional food delivery supply chain.
-- [HDB neighbourhood upgrading](https://supereka-sg.com/projects/hdb-neighbourhood-upgrading/): M&E design and construction supervision for HDB Neighbourhood Renewal Programme works and covered linkway upgrading across Singapore.
+- [Public housing neighbourhood upgrading](https://supereka-sg.com/projects/hdb-neighbourhood-upgrading/): M&E design and construction supervision for HDB Neighbourhood Renewal Programme works and covered linkway upgrading across Singapore.
 - [Mosques and temples: upgrading historic buildings](https://supereka-sg.com/projects/places-of-worship/): Additions and alterations to two mosques and a temple in Singapore, upgrading facilities in the least invasive way possible.
 - [Landed homes with efficient building services](https://supereka-sg.com/projects/residential/): Energy-efficient ACMV and electrical design for five new landed homes in Singapore, including pools and smart-home infrastructure.
-- [Offices, restaurants and retail spaces](https://supereka-sg.com/projects/commercial/): Building services for seven commercial projects, from the Water Boat Restaurant at Fullerton to TIPO venues and offices.
+- [Offices, restaurants and hospitality venues](https://supereka-sg.com/projects/commercial/): Building services for seven commercial and hospitality projects, from a waterfront restaurant to offices and a fitness gym.
 
 ## Key facts
 - Founded: 2018
