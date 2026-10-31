@@ -23,11 +23,11 @@ const About = () => {
         architects and mechanical and electrical engineers. We provide
         building owners, developers and builders with air-conditioning and
         mechanical ventilation (ACMV), electrical and fire protection design,
-        Qualified Professional endorsement, project management and due
+        Qualified Person (QP) endorsement, project management and due
         diligence. <br></br>
         <br></br>
         Our work spans {stats.totalProjects}+ projects: {stats.fnbOutlets}{" "}
-        CHAGEE outlets, {stats.centralKitchens} central kitchens, HDB
+        outlets for a leading premium tea brand, {stats.centralKitchens} central kitchens, HDB
         neighbourhood upgrading, places of worship, commercial buildings and
         landed homes. <br></br>
         <br></br>

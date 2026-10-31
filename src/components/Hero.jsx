@@ -37,7 +37,7 @@ const Hero = () => {
             </i>
           </p>
           <p className="mt-4 max-w-xl font-serif text-[18px] text-secondary">
-            ACMV, electrical, fire protection and Qualified Professional
+            ACMV, electrical, fire protection and Qualified Person (QP)
             endorsement for buildings in Singapore.
           </p>
           <ul className="mt-6 flex flex-wrap gap-x-8 gap-y-2 font-serif text-secondary list-none">

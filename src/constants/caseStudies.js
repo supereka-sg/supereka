@@ -1,8 +1,10 @@
-import { sectors, hdbProjects } from "./portfolio";
+import { sectors, hdbProjects, countOf } from "./portfolio";
 
 // Case studies are written only from the client project reference and the
-// descriptions already on the site. "involves" paragraphs describe the general
-// nature of this kind of work, not outcomes on specific projects.
+// descriptions already on the site. Clients, venues and street names are left
+// out on purpose. "involves" paragraphs describe the general nature of this kind
+// of work, not outcomes on specific projects. `regulation` entries point to keys
+// in `sources` (services.js).
 
 const sector = (id) => sectors.find((s) => s.id === id);
 
@@ -12,21 +14,27 @@ const hdbCount = (status) =>
 export const caseStudies = [
   {
     slug: "fnb-outlets",
-    title: "CHAGEE outlets across Singapore",
+    title: "Outlet rollout for a leading premium tea brand",
     kicker: "F&B outlets",
     summary:
-      "Building services consultancy for 19 CHAGEE tea outlets across Singapore, plus the CHAGEE main office.",
+      "Building services consultancy for 19 outlets of a leading premium tea brand across Singapore, plus the brand's head office.",
     overview:
-      "SUPEREKA has provided building services consultancy for 19 CHAGEE tea outlets in Singapore and the CHAGEE main office at Gluco Midtown on North Bridge Road. Sites range from shopping malls such as VivoCity, JEM, Raffles City, Plaza Singapura, Great World City and Orchard Gateway, to NEX, Tampines One, Changi Airport Terminal 2, the NUS campus and Resorts World Sentosa.",
+      "SUPEREKA has provided building services consultancy for 19 outlets of a leading premium tea brand in Singapore, and for the brand's head office. Sites include 11 shopping malls, city office buildings, an international airport terminal, a university campus, an integrated resort and a healthcare building.",
     highlights: [
-      ["19", "CHAGEE outlets"],
-      ["1", "CHAGEE main office"],
+      ["19", "outlets"],
+      ["11", "in shopping malls"],
     ],
     involves:
       "Every F&B unit sits inside a different building with its own services, so the air-conditioning, ventilation and electrical design has to be fitted to each site. Repeating a brand across many locations rewards consistent design standards, careful coordination with each building, and fast turnaround.",
     scope: [
       ["acmv", "Air-conditioning and ventilation for each unit"],
       ["electrical", "Electrical design and load checks"],
+    ],
+    regulation: [
+      {
+        text: "Food shops are licensed by the Singapore Food Agency (SFA), whose requirements address kitchen exhaust, ventilation and make-up air.",
+        source: "sfa",
+      },
     ],
     sectorId: "fnb-outlets",
   },
@@ -37,7 +45,7 @@ export const caseStudies = [
     summary:
       "Design specifications for 11 multi-stall central kitchens across Singapore, supporting the regional food delivery supply chain.",
     overview:
-      "SUPEREKA has prepared building services design for 11 multi-stall central kitchens across Singapore, from Tampines and Kallang to Pandan Crescent, Serangoon North, Bedok, Bukit Batok, China Square and Thomson Road. These facilities support the growth of the food delivery supply chain.",
+      "SUPEREKA has prepared building services design for 11 multi-stall central kitchens in industrial and commercial buildings across Singapore, from the east to the west of the island. These facilities support the growth of the food delivery supply chain.",
     highlights: [
       ["11", "central kitchen sites"],
       ["3", "disciplines: ACMV, electrical, plumbing"],
@@ -48,18 +56,28 @@ export const caseStudies = [
       ["acmv", "Kitchen exhaust, fresh air and cooling"],
       ["electrical", "Power distribution for multiple stalls"],
     ],
+    regulation: [
+      {
+        text: "SFA's licensing requirements expect cooking fumes to be captured, treated by an air-cleaning system and discharged outdoors, with make-up air supplied so the kitchen stays under negative pressure.",
+        source: "sfa",
+      },
+      {
+        text: "Building plans for the works are submitted to BCA through a Qualified Person.",
+        source: "bcaPlans",
+      },
+    ],
     sectorId: "central-kitchens",
   },
   {
     slug: "hdb-neighbourhood-upgrading",
-    title: "HDB neighbourhood upgrading",
+    title: "Public housing neighbourhood upgrading",
     kicker: "Public housing",
     summary:
       "M&E design and construction supervision for HDB Neighbourhood Renewal Programme works and covered linkway upgrading across Singapore.",
     overview:
-      "SUPEREKA is involved in nine HDB neighbourhood upgrading projects: Neighbourhood Renewal Programme (NRP) works in Bukit Batok and Woodlands, including two 27-block batches in Woodlands, and covered linkways and community improvements in Tampines, Jurong and Simei.",
+      "SUPEREKA is involved in nine public housing neighbourhood upgrading projects: Neighbourhood Renewal Programme (NRP) works in Bukit Batok and Woodlands, including two 27-block batches in Woodlands, and covered linkways and community improvements in Tampines, Jurong and Simei.",
     highlights: [
-      ["9", "HDB projects"],
+      ["9", "public housing projects"],
       ["2 × 27", "blocks in two Woodlands NRP batches"],
       [String(hdbCount("Completed")), "completed"],
     ],
@@ -68,6 +86,12 @@ export const caseStudies = [
     scope: [
       ["project-management", "Construction supervision until completion"],
       ["electrical", "M&E design for blocks and multi-storey car parks"],
+    ],
+    regulation: [
+      {
+        text: "Building plans for the works are submitted to BCA through a Qualified Person.",
+        source: "bcaPlans",
+      },
     ],
     sectorId: "hdb-neighbourhood-upgrading",
     projectsFrom: "hdb",
@@ -79,7 +103,7 @@ export const caseStudies = [
     summary:
       "Additions and alterations to two mosques and a temple in Singapore, upgrading facilities in the least invasive way possible.",
     overview:
-      "SUPEREKA has worked on additions and alterations to Masjid Mujahidin, Fatimah Mosque on North Bridge Road and a temple at 14 Tai Gin Road, updating building services for use today.",
+      "SUPEREKA has worked on additions and alterations to two mosques and a temple in Singapore, updating building services for use today.",
     highlights: [
       ["3", "places of worship"],
       ["2", "mosques and 1 temple"],
@@ -90,6 +114,16 @@ export const caseStudies = [
       ["acmv", "Cooling and ventilation upgrades"],
       ["electrical", "Electrical upgrades"],
     ],
+    regulation: [
+      {
+        text: "Where a building is conserved or lies within a Conservation Area, works must comply with URA's Conservation Guidelines.",
+        source: "uraConservation",
+      },
+      {
+        text: "Building plans for additions and alterations are submitted to BCA through a Qualified Person.",
+        source: "bcaPlans",
+      },
+    ],
     sectorId: "places-of-worship",
   },
   {
@@ -99,7 +133,7 @@ export const caseStudies = [
     summary:
       "Energy-efficient ACMV and electrical design for five new landed homes in Singapore, including pools and smart-home infrastructure.",
     overview:
-      "SUPEREKA has provided building services for five new landed homes, from semi-detached houses with attics and swimming pools at Thomson Heights, Kings Road and Jalan Selanting, to a semi-detached house at Clementi Crescent and a terrace at Goldhill Drive.",
+      "SUPEREKA has provided building services for five new envelope-control landed homes: semi-detached houses with attics and swimming pools, a semi-detached house, and an intermediate terrace house.",
     highlights: [
       ["5", "new landed homes"],
       ["3", "with swimming pools"],
@@ -110,25 +144,37 @@ export const caseStudies = [
       ["acmv", "Energy-efficient air-conditioning"],
       ["electrical", "Electrical and smart-home infrastructure"],
     ],
+    regulation: [
+      {
+        text: "New landed housing is subject to URA's Envelope Control Guidelines, which set the permissible building envelope, including height controls of two or three storeys.",
+        source: "uraLanded",
+      },
+    ],
     sectorId: "residential",
   },
   {
     slug: "commercial",
-    title: "Offices, restaurants and retail spaces",
+    title: "Offices, restaurants and hospitality venues",
     kicker: "Commercial and hospitality",
     summary:
-      "Building services for seven commercial projects, from the Water Boat Restaurant at Fullerton to TIPO venues and offices.",
+      "Building services for seven commercial and hospitality projects, from a waterfront restaurant to offices and a fitness gym.",
     overview:
-      "SUPEREKA has delivered seven commercial projects: the Water Boat Restaurant at Fullerton, TIPO at Kampong Bugis and Stamford Arts Centre, a 7-storey office on Geylang Road, a 6-storey office at Upper Circular Road, the Design Link Architects office revamp, and a fitness gym at Raffles Hospital.",
+      "SUPEREKA has delivered seven commercial and hospitality projects: a waterfront restaurant in the downtown core, two hospitality venues, a 7-storey office building, a 6-storey office building, an office revamp for an architecture practice, and a fitness gym in a private healthcare building.",
     highlights: [
       ["7", "commercial projects"],
-      ["2", "TIPO venues"],
+      ["2", "hospitality venues"],
     ],
     involves:
       "We work closely with architects and builders to produce vibrant, inviting spaces using lighting, ACMV and electrical systems, balancing behind-the-scenes operations with the front-facing elegance hospitality needs.",
     scope: [
       ["acmv", "Air-conditioning and ventilation"],
       ["electrical", "Lighting and electrical systems"],
+    ],
+    regulation: [
+      {
+        text: "Building plans are submitted to BCA through a Qualified Person, with fire safety plans submitted to SCDF.",
+        source: "bcaPlans",
+      },
     ],
     sectorId: "commercial",
   },
@@ -139,4 +185,7 @@ export const getCaseStudy = (slug) => caseStudies.find((c) => c.slug === slug);
 export const getCaseProjects = (study) =>
   study.projectsFrom === "hdb"
     ? hdbProjects.map((p) => ({ name: p.name, status: p.status }))
-    : sector(study.sectorId).projects.map((name) => ({ name }));
+    : sector(study.sectorId).projects.map((p) => ({
+        name: p.name,
+        count: countOf(p),
+      }));
