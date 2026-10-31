@@ -13,7 +13,8 @@ const organization = () => ({
   "@id": ORG_ID,
   name: SITE.name,
   url: SITE.url,
-  logo: url("/logo.svg"),
+  logo: url("/logo.png"),
+  image: url("/og-image.png"),
   description: SITE.description,
   foundingDate: String(SITE.foundingYear),
   email: SITE.email,
@@ -26,6 +27,7 @@ const organization = () => ({
     addressCountry: SITE.address.country,
   },
   areaServed: { "@type": "Country", name: "Singapore" },
+  ...(SITE.sameAs.length > 0 && { sameAs: SITE.sameAs }),
   knowsAbout: services.map((s) => s.shortTitle),
   hasOfferCatalog: {
     "@type": "OfferCatalog",

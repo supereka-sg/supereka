@@ -1,6 +1,7 @@
 // Prerenders every route to static HTML after `vite build` and the SSR build,
 // so crawlers (including AI crawlers that don't run JavaScript) see real content.
 import { promises as fs } from "node:fs";
+import { execFileSync } from "node:child_process";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
@@ -32,7 +33,12 @@ const headTags = (meta) => {
     `<meta property="og:description" content="${esc(meta.description)}" />`,
     `<meta property="og:url" content="${canonical}" />`,
     `<meta property="og:locale" content="en_SG" />`,
-    `<meta name="twitter:card" content="summary" />`,
+    `<meta property="og:image" content="${SITE_URL}/og-image.png" />`,
+    `<meta property="og:image:width" content="1200" />`,
+    `<meta property="og:image:height" content="630" />`,
+    `<meta property="og:image:alt" content="SUPEREKA, building services consultancy in Singapore" />`,
+    `<meta name="twitter:card" content="summary_large_image" />`,
+    `<meta name="twitter:image" content="${SITE_URL}/og-image.png" />`,
     `<meta name="twitter:title" content="${esc(meta.title)}" />`,
     `<meta name="twitter:description" content="${esc(meta.description)}" />`,
     ...meta.jsonLd.map(
@@ -93,6 +99,29 @@ for (const [from, to] of Object.entries(moved)) {
 await write(path.join(dist, "404.html"), page("/does-not-exist/"));
 
 const today = new Date().toISOString().slice(0, 10);
+
+// Date of the last commit that touched the content behind a page, so lastmod
+// reflects real changes. Falls back to today where git history is unavailable
+// (for example a shallow clone on a build server).
+const lastModified = (files) => {
+  try {
+    const out = execFileSync(
+      "git",
+      ["log", "-1", "--format=%cs", "--", ...files],
+      { cwd: root, encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] }
+    ).trim();
+    return out || today;
+  } catch {
+    return today;
+  }
+};
+
+const contentFor = (p) => {
+  if (p.startsWith("/services/")) return ["src/constants/services.js"];
+  if (p.startsWith("/projects/"))
+    return ["src/constants/portfolio.js", "src/constants/caseStudies.js"];
+  return ["src"];
+};
 await write(
   path.join(dist, "sitemap.xml"),
   `<?xml version="1.0" encoding="UTF-8"?>
@@ -100,7 +129,7 @@ await write(
 ${indexablePaths
   .map(
     (p) =>
-      `  <url><loc>${SITE_URL}${p}</loc><lastmod>${today}</lastmod></url>`
+      `  <url><loc>${SITE_URL}${p}</loc><lastmod>${lastModified(contentFor(p))}</lastmod></url>`
   )
   .join("\n")}
 </urlset>
