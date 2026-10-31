@@ -1,8 +1,8 @@
 import { Tilt } from "react-tilt";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -13,7 +13,8 @@ const ProjectCard = ({
   description,
   tags,
   image,
-  source_code_link,
+  alt,
+  href,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -28,13 +29,15 @@ const ProjectCard = ({
         <div className="relative w-full h-[230px]">
           <img
             src={image}
-            alt="project_image"
+            alt={alt}
             className="w-full h-full object-cover rounded-2xl"
           />
         </div>
 
         <div className="mt-5">
-          <h3 className="text-white font-bold text-[24px]">{name}</h3>
+          <h3 className="text-white font-bold text-[24px]">
+            <Link to={href}>{name}</Link>
+          </h3>
           <p className="mt-2 text-secondary text-[14px] overflow-hidden">
             {description}
           </p>
@@ -67,15 +70,19 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-0 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Building services consultants play a crucial role in a wide range of
-          built environment projects where the design, installation, and
-          operation of building services systems are critical. These systems are
-          essential for the comfort, safety, and functionality of buildings.
-          <br></br>Here are some types of projects that we have worked on:
+          Building services systems are essential for the comfort, safety and
+          functionality of buildings. SUPEREKA has delivered more than 50
+          projects in Singapore, from CHAGEE outlets and central kitchens to
+          HDB neighbourhood upgrading, places of worship and landed homes.
+          <br></br>
+          <Link to="/projects/" className="underline font-bold">
+            See the full project list
+          </Link>
+          .
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-7">
+      <div className="mt-10 flex flex-wrap gap-7">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
@@ -83,10 +90,10 @@ const Works = () => {
       <br></br>
       <div className="flex flex-row justify-between font-serif">
         <div className="text-tertiary">
-          <a href="#testimonial">See what our customers have to say</a>
+          <Link to="/projects/">All projects</Link>
         </div>
         <div className="underline font-bold text-secondary">
-          <a href="#contact">Let's Talk!</a>
+          <a href="#contact">Let's talk!</a>
         </div>
       </div>
     </>
