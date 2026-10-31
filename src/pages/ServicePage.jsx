@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import PageLayout from "../components/PageLayout";
 import { styles } from "../styles";
 import { services, getService } from "../constants/services";
+import { caseStudies } from "../constants/caseStudies";
 import { SITE } from "../constants/site";
 import Regulation from "../components/Regulation";
 import NotFound from "./NotFound";
@@ -13,6 +14,9 @@ const ServicePage = () => {
   if (!service) return <NotFound />;
 
   const others = services.filter((s) => s.slug !== service.slug);
+  const related = caseStudies.filter((c) =>
+    c.scope.some(([slug]) => slug === service.slug)
+  );
 
   return (
     <PageLayout>
@@ -51,6 +55,17 @@ const ServicePage = () => {
           </Link>
           .
         </p>
+        {related.length > 0 && (
+          <ul className="mt-4 list-disc pl-6 text-secondary text-[17px] leading-[30px]">
+            {related.map((c) => (
+              <li key={c.slug}>
+                <Link className="underline" to={`/projects/${c.slug}/`}>
+                  {c.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        )}
 
         <h2 className="mt-12 text-primary font-bold text-[28px]">
           Frequently asked questions

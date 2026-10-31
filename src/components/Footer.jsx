@@ -12,6 +12,9 @@ const Footer = () => (
           {SITE.name}
         </p>
         <p>{SITE.tagline}</p>
+        <p className="text-[14px]">
+          {SITE.legalName}, UEN {SITE.uen}
+        </p>
         <address className="mt-3 not-italic">
           {SITE.address.street}
           <br />
