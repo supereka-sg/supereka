@@ -17,7 +17,7 @@ const ProjectsPage = () => (
       <p className="mt-4 text-secondary text-[19px] leading-[32px] max-w-3xl">
         {SITE.name} has delivered {stats.totalProjects}+ building services
         projects in Singapore since {SITE.foundingYear}: {stats.fnbOutlets}{" "}
-        CHAGEE outlets, {stats.centralKitchens} central kitchens, {stats.hdbProjects}{" "}
+        outlets for a leading premium tea brand, {stats.centralKitchens} central kitchens, {stats.hdbProjects}{" "}
         HDB neighbourhood upgrading projects, places of worship, commercial
         buildings and landed homes. Our{" "}
         <Link to="/services/acmv/" className="underline">
@@ -52,7 +52,7 @@ const ProjectsPage = () => (
           <h2 className="text-primary font-bold text-[30px]">
             {s.name}{" "}
             <span className="text-tertiary font-normal text-[20px]">
-              ({s.projects.length})
+              ({s.projects.reduce((n, p) => n + (p.count || 1), 0)})
             </span>
           </h2>
           <p className="mt-2 text-secondary text-[17px]">
@@ -63,7 +63,10 @@ const ProjectsPage = () => (
           </p>
           <ul className="mt-4 list-disc pl-6 text-secondary text-[17px] leading-[30px]">
             {s.projects.map((p) => (
-              <li key={p}>{p}</li>
+              <li key={p.name}>
+                {p.count > 1 ? `${p.count} × ` : ""}
+                {p.name}
+              </li>
             ))}
           </ul>
         </section>

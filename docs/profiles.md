@@ -27,7 +27,7 @@ Keep these details identical everywhere (site footer, Google, LinkedIn, director
 
 **Business description** (limit 750 characters):
 
-> SUPEREKA is a building services consultancy in Singapore, founded in 2018 by architects and mechanical and electrical engineers. We design and supervise air-conditioning and mechanical ventilation (ACMV), electrical and fire protection systems, provide Qualified Professional endorsement, project management and due diligence. Our 55+ projects include 19 CHAGEE outlets, 11 central kitchens, HDB neighbourhood upgrading, places of worship, offices and landed homes. Contact us to discuss your project.
+> SUPEREKA is a building services consultancy in Singapore, founded in 2018 by architects and mechanical and electrical engineers. We design and supervise air-conditioning and mechanical ventilation (ACMV), electrical and fire protection systems, provide Qualified Person (QP) endorsement, project management and due diligence. Our 55+ projects include 19 outlets for a leading premium tea brand, 11 central kitchens, HDB neighbourhood upgrading, places of worship, offices and landed homes. Contact us to discuss your project.
 
 **Services to list** (each with a one-line description, taken from the site):
 
@@ -36,7 +36,7 @@ Keep these details identical everywhere (site footer, Google, LinkedIn, director
 | ACMV design | Air-conditioning and mechanical ventilation design and supervision for offices, retail, F&B, kitchens, homes and places of worship. |
 | Electrical design and LEW services | Power, lighting and load design, electrical load upgrading and EV charging infrastructure. |
 | Fire protection | Fire protection system design and regulatory submissions. |
-| Qualified Professional endorsement | Endorsement of building services submissions for regulatory approval. |
+| Qualified Person (QP) endorsement | Endorsement of building services submissions for regulatory approval. |
 | Project management | Design coordination, tender support and site supervision until completion. |
 | Due diligence | Independent review of a building's mechanical and electrical systems. |
 
@@ -53,7 +53,7 @@ photos you own the rights to, team photo. Avoid renders or stock images.
 
 **First Google post** (Updates tab):
 
-> We have refreshed our website with our full project list: 19 CHAGEE outlets, 11 central kitchens, HDB neighbourhood upgrading and more. See what we have delivered: https://supereka-sg.com/projects/
+> We have refreshed our website with our full project list: 19 outlets for a leading premium tea brand, 11 central kitchens, HDB neighbourhood upgrading and more. See what we have delivered: https://supereka-sg.com/projects/
 
 ---
 
@@ -78,12 +78,12 @@ photos you own the rights to, team photo. Avoid renders or stock images.
 > - Air-conditioning and mechanical ventilation (ACMV)
 > - Electrical services, including Licensed Electrical Worker (LEW) services, load upgrading and EV charging
 > - Fire protection
-> - Qualified Professional endorsement
+> - Qualified Person (QP) endorsement
 > - Project management
 > - Due diligence
 >
 > Selected work
-> - 19 CHAGEE outlets across Singapore
+> - 19 outlets for a leading premium tea brand across Singapore
 > - 11 central kitchens supporting the food delivery supply chain
 > - HDB Neighbourhood Renewal Programme and covered linkway upgrading
 > - Additions and alterations to mosques and a temple
@@ -95,11 +95,11 @@ photos you own the rights to, team photo. Avoid renders or stock images.
 > Projects: https://supereka-sg.com/projects/
 > Contact: admin@supereka-sg.com | +65 9667 4754
 
-**Specialties:** ACMV, mechanical ventilation, electrical engineering, fire protection, M&E consultancy, Qualified Professional endorsement, project management, due diligence, central kitchens, EV charging.
+**Specialties:** ACMV, mechanical ventilation, electrical engineering, fire protection, M&E consultancy, Qualified Person (QP) endorsement, project management, due diligence, central kitchens, EV charging.
 
 **First three posts** (adapt freely):
 
-1. *Announcement.* "Our new website lists 55+ projects delivered in Singapore since 2018, from CHAGEE outlets to HDB neighbourhood upgrading. Take a look: https://supereka-sg.com/projects/"
+1. *Announcement.* "Our new website lists 55+ projects delivered in Singapore since 2018, from premium tea-brand outlets to HDB neighbourhood upgrading. Take a look: https://supereka-sg.com/projects/"
 2. *Explainer.* Share the ACMV FAQ: "What does ACMV stand for, and what does it cover?" with a link to https://supereka-sg.com/services/acmv/
 3. *Project.* A single project from the case studies (see https://supereka-sg.com/projects/), with one photo you own.
 

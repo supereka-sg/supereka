@@ -64,7 +64,7 @@ const faqPage = (faqs) => ({
 
 const HOME_META = {
   title: "SUPEREKA | Building Services Consultancy in Singapore (ACMV, Electrical, Fire)",
-  description: `${SITE.description} ${stats.totalProjects}+ projects including ${stats.fnbOutlets} CHAGEE outlets, ${stats.centralKitchens} central kitchens and HDB neighbourhood upgrading.`,
+  description: `${SITE.description} ${stats.totalProjects}+ projects including ${stats.fnbOutlets} outlets for a leading premium tea brand, ${stats.centralKitchens} central kitchens and HDB neighbourhood upgrading.`,
 };
 
 export const getRouteMeta = (path) => {
@@ -78,12 +78,12 @@ export const getRouteMeta = (path) => {
 
   if (path === "/projects/") {
     const items = [
-      ...sectors.flatMap((s) => s.projects),
+      ...sectors.flatMap((s) => s.projects.map((p) => p.name)),
       ...hdbProjects.map((p) => p.name),
     ];
     return {
       title: "Projects | SUPEREKA Building Services Consultancy, Singapore",
-      description: `Selected SUPEREKA projects in Singapore: ${stats.fnbOutlets} CHAGEE F&B outlets, ${stats.centralKitchens} central kitchens, HDB neighbourhood upgrading, places of worship, commercial and residential buildings.`,
+      description: `Selected SUPEREKA projects in Singapore: ${stats.fnbOutlets} F&B outlets for a leading premium tea brand, ${stats.centralKitchens} central kitchens, HDB neighbourhood upgrading, places of worship, commercial and residential buildings.`,
       path,
       jsonLd: [
         organization(),
@@ -193,7 +193,7 @@ ${services
   .join("\n")}
 
 ## Projects
-- [All projects](${url("/projects/")}): ${stats.totalProjects}+ projects across ${sectors.length} sectors and HDB neighbourhood upgrading, including ${stats.fnbOutlets} CHAGEE outlets and ${stats.centralKitchens} central kitchens.
+- [All projects](${url("/projects/")}): ${stats.totalProjects}+ projects across ${sectors.length} sectors and HDB neighbourhood upgrading, including ${stats.fnbOutlets} outlets for a leading premium tea brand and ${stats.centralKitchens} central kitchens.
 ${caseStudies
   .map((c) => `- [${c.title}](${url(`/projects/${c.slug}/`)}): ${c.summary}`)
   .join("\n")}

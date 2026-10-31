@@ -63,6 +63,32 @@ for (const p of indexablePaths) {
   console.log("prerendered", p);
 }
 
+// Old URLs that moved. GitHub Pages cannot send 301s, so leave a stub that
+// points search engines and visitors at the new address.
+const moved = {
+  "/services/qualified-professional-endorsement/":
+    "/services/qualified-person-endorsement/",
+};
+for (const [from, to] of Object.entries(moved)) {
+  await write(
+    path.join(dist, from, "index.html"),
+    `<!doctype html>
+<html lang="en-SG">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Page moved | SUPEREKA</title>
+    <meta name="robots" content="noindex" />
+    <link rel="canonical" href="${SITE_URL}${to}" />
+    <meta http-equiv="refresh" content="0; url=${to}" />
+  </head>
+  <body>
+    <p>This page has moved to <a href="${to}">${SITE_URL}${to}</a>.</p>
+  </body>
+</html>
+`
+  );
+}
+
 // GitHub Pages serves 404.html (with a 404 status) for unknown URLs.
 await write(path.join(dist, "404.html"), page("/does-not-exist/"));
 

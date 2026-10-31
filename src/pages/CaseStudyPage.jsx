@@ -5,6 +5,7 @@ import { styles } from "../styles";
 import { caseStudies, getCaseStudy, getCaseProjects } from "../constants/caseStudies";
 import { getService } from "../constants/services";
 import { SITE } from "../constants/site";
+import Regulation from "../components/Regulation";
 import NotFound from "./NotFound";
 
 const CaseStudyPage = () => {
@@ -61,16 +62,21 @@ const CaseStudyPage = () => {
 
         <h2 className="mt-12 text-primary font-bold text-[28px]">
           Projects{" "}
-          <span className="text-tertiary font-normal text-[20px]">({projects.length})</span>
+          <span className="text-tertiary font-normal text-[20px]">
+            ({projects.reduce((n, p) => n + (p.count || 1), 0)})
+          </span>
         </h2>
         <ul className="mt-4 list-disc pl-6 text-secondary text-[17px] leading-[30px]">
           {projects.map((p) => (
             <li key={p.name} className="mb-1">
+              {p.count > 1 ? `${p.count} × ` : ""}
               {p.name}
               {p.status ? <> — <b>{p.status}</b></> : null}
             </li>
           ))}
         </ul>
+
+        <Regulation title="Regulatory context" items={study.regulation} />
 
         <div className="mt-12 p-6 rounded-2xl bg-tertiary2 text-secondary text-[17px]">
           <p className="font-bold text-primary text-[20px]">

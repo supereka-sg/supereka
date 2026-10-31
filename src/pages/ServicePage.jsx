@@ -4,6 +4,7 @@ import PageLayout from "../components/PageLayout";
 import { styles } from "../styles";
 import { services, getService } from "../constants/services";
 import { SITE } from "../constants/site";
+import Regulation from "../components/Regulation";
 import NotFound from "./NotFound";
 
 const ServicePage = () => {
@@ -33,13 +34,18 @@ const ServicePage = () => {
           ))}
         </ul>
 
+        <Regulation
+          title="Singapore regulations and standards"
+          items={service.regulation}
+        />
+
         <h2 className="mt-12 text-primary font-bold text-[28px]">
           Where we have applied it
         </h2>
         <p className="mt-4 text-secondary text-[17px] leading-[30px]">
-          {SITE.name} has delivered building services for CHAGEE outlets,
-          central kitchens, HDB neighbourhood upgrading, places of worship,
-          offices and landed homes. See the{" "}
+          {SITE.name} has delivered building services for outlets of a leading
+          premium tea brand, central kitchens, HDB neighbourhood upgrading,
+          places of worship, offices and landed homes. See the{" "}
           <Link to="/projects/" className="underline font-bold">
             full project list
           </Link>

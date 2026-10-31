@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
-import { carrent, Tipo } from "../assets";
+import { carrent, hospitalityVenue } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { caseStudies } from "../constants/caseStudies";
 import { getService } from "../constants/services";
@@ -14,7 +14,7 @@ const photos = {
     src: carrent,
     alt: "Corridor between food stalls in a central kitchen",
   },
-  commercial: { src: Tipo, alt: "Interior of a TIPO venue" },
+  commercial: { src: hospitalityVenue, alt: "Interior of a hospitality venue" },
 };
 
 const ScheduleRow = ({ study }) => {
@@ -83,7 +83,7 @@ const Works = () => {
       >
         Building services systems are essential for the comfort, safety and
         functionality of buildings. SUPEREKA has delivered more than 50
-        projects in Singapore, from CHAGEE outlets and central kitchens to
+        projects in Singapore, from tea-brand outlets and central kitchens to
         HDB neighbourhood upgrading, places of worship and landed homes.
       </motion.p>
 
