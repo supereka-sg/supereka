@@ -1,6 +1,7 @@
 import { SITE } from "../constants/site";
 import { services } from "../constants/services";
 import { sectors, hdbProjects, stats } from "../constants/portfolio";
+import { caseStudies, getCaseProjects } from "../constants/caseStudies";
 
 const url = (path) => `${SITE.url}${path}`;
 
@@ -105,6 +106,34 @@ export const getRouteMeta = (path) => {
     };
   }
 
+  const caseMatch = path.match(/^\/projects\/([^/]+)\/$/);
+  const study = caseMatch && caseStudies.find((c) => c.slug === caseMatch[1]);
+  if (study) {
+    return {
+      title: `${study.title} | SUPEREKA Projects, Singapore`,
+      description: study.summary,
+      path,
+      jsonLd: [
+        organization(),
+        breadcrumbs([
+          ["Home", "/"],
+          ["Projects", "/projects/"],
+          [study.title, path],
+        ]),
+        {
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          name: study.title,
+          itemListElement: getCaseProjects(study).map((p, i) => ({
+            "@type": "ListItem",
+            position: i + 1,
+            name: p.name,
+          })),
+        },
+      ],
+    };
+  }
+
   const match = path.match(/^\/services\/([^/]+)\/$/);
   const service = match && services.find((s) => s.slug === match[1]);
   if (service) {
@@ -145,6 +174,7 @@ export const getRouteMeta = (path) => {
 export const indexablePaths = [
   "/",
   "/projects/",
+  ...caseStudies.map((c) => `/projects/${c.slug}/`),
   ...services.map((s) => `/services/${s.slug}/`),
 ];
 
@@ -163,7 +193,10 @@ ${services
   .join("\n")}
 
 ## Projects
-- [Selected projects](${url("/projects/")}): ${stats.totalProjects}+ projects across ${sectors.length} sectors and HDB neighbourhood upgrading, including ${stats.fnbOutlets} CHAGEE outlets and ${stats.centralKitchens} central kitchens.
+- [All projects](${url("/projects/")}): ${stats.totalProjects}+ projects across ${sectors.length} sectors and HDB neighbourhood upgrading, including ${stats.fnbOutlets} CHAGEE outlets and ${stats.centralKitchens} central kitchens.
+${caseStudies
+  .map((c) => `- [${c.title}](${url(`/projects/${c.slug}/`)}): ${c.summary}`)
+  .join("\n")}
 
 ## Key facts
 - Founded: ${SITE.foundingYear}

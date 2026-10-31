@@ -1,60 +1,72 @@
-import { Tilt } from "react-tilt";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
+import { carrent, Tipo } from "../assets";
 import { SectionWrapper } from "../hoc";
-import { projects } from "../constants";
+import { caseStudies } from "../constants/caseStudies";
+import { getService } from "../constants/services";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const ProjectCard = ({
-  index,
-  name,
-  description,
-  tags,
-  image,
-  alt,
-  href,
-}) => {
+// Photos are shown only where they depict the sector.
+const photos = {
+  "central-kitchens": {
+    src: carrent,
+    alt: "Corridor between food stalls in a central kitchen",
+  },
+  commercial: { src: Tipo, alt: "Interior of a TIPO venue" },
+};
+
+const ScheduleRow = ({ study }) => {
+  const [figure, figureLabel] = study.highlights[0];
+  const photo = photos[study.slug];
+
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+    <li className="border-b border-tertiary">
+      <Link
+        to={`/projects/${study.slug}/`}
+        className="group grid gap-x-8 gap-y-3 py-7 sm:grid-cols-[130px_1fr_auto] sm:items-center"
       >
-        <div className="relative w-full h-[230px]">
+        <span>
+          <span className="block font-sans font-black text-primary text-[48px] leading-none">
+            {figure}
+          </span>
+          <span className="block mt-1 font-serif text-secondary text-[15px]">
+            {figureLabel}
+          </span>
+        </span>
+
+        <span className="block max-w-2xl">
+          <span className="block font-serif text-primary text-[26px] leading-[32px] group-hover:underline">
+            {study.title}
+          </span>
+          <span className="block mt-2 font-serif text-secondary text-[17px] leading-[27px]">
+            {study.summary}
+          </span>
+          <span className="mt-3 flex flex-wrap gap-2">
+            {study.scope.map(([slug]) => (
+              <span
+                key={slug}
+                className="font-sans text-[13px] text-secondary border border-tertiary rounded-full px-3 py-0.5"
+              >
+                {getService(slug).shortTitle}
+              </span>
+            ))}
+          </span>
+        </span>
+
+        {photo ? (
           <img
-            src={image}
-            alt={alt}
-            className="w-full h-full object-cover rounded-2xl"
+            src={photo.src}
+            alt={photo.alt}
+            loading="lazy"
+            className="hidden sm:block w-[200px] h-[120px] object-cover rounded-md"
           />
-        </div>
-
-        <div className="mt-5">
-          <h3 className="text-white font-bold text-[24px]">
-            <Link to={href}>{name}</Link>
-          </h3>
-          <p className="mt-2 text-secondary text-[14px] overflow-hidden">
-            {description}
-          </p>
-        </div>
-
-        <div className="mt-4 flex flex-wrap gap-2">
-          {tags.map((tag) => (
-            <p
-              key={`${name}-${tag.name}`}
-              className={`text-[14px] ${tag.color}`}
-            >
-              #{tag.name}
-            </p>
-          ))}
-        </div>
-      </Tilt>
-    </motion.div>
+        ) : (
+          <span className="hidden sm:block w-[200px]" aria-hidden="true" />
+        )}
+      </Link>
+    </li>
   );
 };
 
@@ -65,36 +77,29 @@ const Works = () => {
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
       </motion.div>
 
-      <div className="w-full flex">
-        <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
-          className="mt-0 text-secondary text-[17px] max-w-3xl leading-[30px]"
-        >
-          Building services systems are essential for the comfort, safety and
-          functionality of buildings. SUPEREKA has delivered more than 50
-          projects in Singapore, from CHAGEE outlets and central kitchens to
-          HDB neighbourhood upgrading, places of worship and landed homes.
-          <br></br>
-          <Link to="/projects/" className="underline font-bold">
-            See the full project list
-          </Link>
-          .
-        </motion.p>
-      </div>
+      <motion.p
+        variants={fadeIn("", "", 0.1, 1)}
+        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+      >
+        Building services systems are essential for the comfort, safety and
+        functionality of buildings. SUPEREKA has delivered more than 50
+        projects in Singapore, from CHAGEE outlets and central kitchens to
+        HDB neighbourhood upgrading, places of worship and landed homes.
+      </motion.p>
 
-      <div className="mt-10 flex flex-wrap gap-7">
-        {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
+      <ul className="mt-10 list-none border-t border-tertiary">
+        {caseStudies.map((study) => (
+          <ScheduleRow key={study.slug} study={study} />
         ))}
-      </div>
-      <br></br>
-      <div className="flex flex-row justify-between font-serif">
-        <div className="text-tertiary">
-          <Link to="/projects/">All projects</Link>
-        </div>
-        <div className="underline font-bold text-secondary">
-          <a href="#contact">Let's talk!</a>
-        </div>
+      </ul>
+
+      <div className="mt-8 flex flex-row justify-between font-serif text-[18px]">
+        <Link to="/projects/" className="text-secondary underline">
+          See every project
+        </Link>
+        <a href="#contact" className="underline font-bold text-primary">
+          Let&apos;s talk
+        </a>
       </div>
     </>
   );

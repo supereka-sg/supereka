@@ -147,6 +147,64 @@ const Contact = () => {
         >
           <br></br>
 
+          <div className="contact-details font-serif text-secondary text-[18px] leading-[28px]">
+            <h3 className="font-sans font-bold text-primary text-[20px]">
+              SUPEREKA
+            </h3>
+            <dl className="mt-4 flex flex-col gap-4">
+              <div>
+                <dt className="font-sans font-bold text-primary text-[15px]">
+                  Office
+                </dt>
+                <dd>
+                  <address className="not-italic">
+                    National Design Centre,
+                    <br />
+                    111 Middle Road, #03-01
+                    <br />
+                    Singapore 188969
+                  </address>
+                </dd>
+              </div>
+              <div>
+                <dt className="font-sans font-bold text-primary text-[15px]">
+                  Email
+                </dt>
+                <dd>
+                  <a className="underline" href="mailto:admin@supereka-sg.com">
+                    admin@supereka-sg.com
+                  </a>
+                </dd>
+              </div>
+              <div>
+                <dt className="font-sans font-bold text-primary text-[15px]">
+                  Phone
+                </dt>
+                <dd>
+                  <a className="underline" href="tel:+6596674754">
+                    +65 9667 4754
+                  </a>
+                </dd>
+              </div>
+            </dl>
+          </div>
+
+          {/* <EarthCanvas /> */}
+          {/* removed the 3D model of the structural, need to look for gltf of mechanical stuff */}
+        </motion.div>
+      </div>
+      <div className="xl: xl:flex-row flex-column-reverse flex gap-5 overflow-hidden">
+        <motion.div
+          variants={slideIn("left", "tween", 0.2, 1)}
+          className="flex-[0.75] bg-grey p-8 rounded-2xl"
+        ></motion.div>
+
+        <motion.div
+          variants={slideIn("right", "tween", 0.2, 1)}
+          className="xl:flex-1 xl:h-auto md:h-[550px] h-350px"
+        >
+          <br></br>
+
           <div className="contact-details">
             <div className={styles.sectionSubText}>
               <div className="flex justify-between items-center mb-4">

@@ -64,7 +64,7 @@ export const sectors = [
     id: "fnb-outlets",
     name: "F&B outlets",
     summary:
-      "A rollout of CHAGEE tea outlets across Singapore, from malls and MRT hubs to campuses and resorts.",
+      "A rollout of CHAGEE tea outlets across Singapore, from malls and transport hubs to campuses and resorts, plus the CHAGEE main office.",
     projects: [
       "CHAGEE at VivoCity",
       "CHAGEE main office at Gluco Midtown, North Bridge Road",
@@ -136,6 +136,9 @@ export const stats = {
   totalProjects: sectorCount + hdbProjects.length,
   centralKitchens: sectors.find((s) => s.id === "central-kitchens").projects
     .length,
-  fnbOutlets: sectors.find((s) => s.id === "fnb-outlets").projects.length,
+  // The reference lists 20 CHAGEE projects, one of which is the main office.
+  fnbOutlets: sectors
+    .find((s) => s.id === "fnb-outlets")
+    .projects.filter((p) => !/main office/i.test(p)).length,
   hdbProjects: hdbProjects.length,
 };

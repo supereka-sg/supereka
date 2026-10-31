@@ -11,11 +11,13 @@ const ComputersCanvas = lazy(() => import("./canvas/Computers"));
 const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
-      <ClientOnly>
-        <Suspense fallback={null}>
-          <ComputersCanvas />
-        </Suspense>
-      </ClientOnly>
+      <div className="absolute inset-0 lg:left-[48%]">
+        <ClientOnly>
+          <Suspense fallback={null}>
+            <ComputersCanvas />
+          </Suspense>
+        </ClientOnly>
+      </div>
 
       <div
         className={`absolute inset-0 top-[120px] z-10 pointer-events-none max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
@@ -58,6 +60,20 @@ const Hero = () => {
               central kitchens
             </li>
           </ul>
+          <div className="mt-8 flex flex-wrap items-center gap-6 pointer-events-auto">
+            <a
+              href="/projects/"
+              className="bg-primary text-white-100 font-sans font-bold text-[16px] rounded-xl px-7 py-3"
+            >
+              View our projects
+            </a>
+            <a
+              href="#contact"
+              className="font-serif text-primary text-[18px] underline"
+            >
+              Contact us
+            </a>
+          </div>
         </div>
       </div>
 

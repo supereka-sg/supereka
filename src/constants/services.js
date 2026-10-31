@@ -22,7 +22,7 @@ export const services = [
       },
       {
         q: "Do you design ventilation for F&B outlets and central kitchens?",
-        a: "Yes. SUPEREKA has provided building services design for eleven central kitchen developments and over twenty F&B outlets in Singapore, including kitchen exhaust and fresh-air provision.",
+        a: "Yes. SUPEREKA has provided building services design for eleven central kitchen developments and 19 CHAGEE outlets in Singapore, including kitchen exhaust and fresh-air provision.",
       },
       {
         q: "Can an air-conditioning system be added to an existing building?",

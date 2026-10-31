@@ -55,7 +55,12 @@ const ProjectsPage = () => (
               ({s.projects.length})
             </span>
           </h2>
-          <p className="mt-2 text-secondary text-[17px]">{s.summary}</p>
+          <p className="mt-2 text-secondary text-[17px]">
+            {s.summary}{" "}
+            <Link className="underline font-bold" to={`/projects/${s.id}/`}>
+              Read more
+            </Link>
+          </p>
           <ul className="mt-4 list-disc pl-6 text-secondary text-[17px] leading-[30px]">
             {s.projects.map((p) => (
               <li key={p}>{p}</li>
@@ -73,7 +78,13 @@ const ProjectsPage = () => (
         </h2>
         <p className="mt-2 text-secondary text-[17px]">
           Neighbourhood Renewal Programme works, covered linkways and
-          community improvements for public housing estates.
+          community improvements for public housing estates.{" "}
+          <Link
+            className="underline font-bold"
+            to="/projects/hdb-neighbourhood-upgrading/"
+          >
+            Read more
+          </Link>
         </p>
         <ul className="mt-4 list-disc pl-6 text-secondary text-[17px] leading-[30px]">
           {hdbProjects.map((p) => (
