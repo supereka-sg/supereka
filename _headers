@@ -1,0 +1,5 @@
+# Netlify only. The live site is served from GitHub Pages at supereka-sg.com,
+# so keep the Netlify copy and its deploy previews out of search results.
+# Remove this file if production ever moves to Netlify.
+/*
+  X-Robots-Tag: noindex
