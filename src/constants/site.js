@@ -1,5 +1,8 @@
 export const SITE = {
   name: "SUPEREKA",
+  legalName: "SUPEREKA LLP",
+  // Unique Entity Number issued by ACRA.
+  uen: "T18LL1787A",
   url: "https://supereka-sg.com",
   foundingYear: 2018,
   email: "admin@supereka-sg.com",

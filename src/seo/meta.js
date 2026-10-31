@@ -12,6 +12,12 @@ const organization = () => ({
   "@type": "ProfessionalService",
   "@id": ORG_ID,
   name: SITE.name,
+  legalName: SITE.legalName,
+  identifier: {
+    "@type": "PropertyValue",
+    propertyID: "UEN",
+    value: SITE.uen,
+  },
   url: SITE.url,
   logo: url("/logo.png"),
   image: url("/og-image.png"),
@@ -186,6 +192,7 @@ export const buildLlmsTxt = () => `# ${SITE.name}
 
 ${SITE.name} is a building services (M&E) consultancy based in Singapore, founded in ${SITE.foundingYear} by architects and mechanical and electrical engineers. It serves building owners, developers, builders and homeowners.
 
+Legal name: ${SITE.legalName} (UEN ${SITE.uen})
 Contact: ${SITE.email} | ${SITE.phone}
 Address: ${SITE.address.street}, ${SITE.address.locality} ${SITE.address.postalCode}
 
